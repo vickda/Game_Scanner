@@ -9,7 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.gamescanner.presentation.scanner.components.ScannerView
+import com.example.gamescanner.presentation.homescreen.components.HomeScreenViewModel
 import com.example.gamescanner.presentation.ui.theme.GameScannerTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,8 +29,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    HomeScreenViewModel();
-    ScannerView();
+    HomeScreenViewModel();
+//    ScannerView();
+//    SuccessView()
 }
 
 @Preview(showBackground = true)
